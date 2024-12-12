@@ -1,14 +1,9 @@
 {
   "name": "remark-budoux",
-  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": ["budoux", "remark"],
+  "version": "1.0.0",
   "author": "Towa Hayashi <wagomu.dev.th@gmail.com>",
-  "license": "MIT",
+  "bugs": "https://github.com/staticWagomU/remark-budoux/issues",
   "dependencies": {
     "budoux": "^0.6.2",
     "unist-util-visit": "^5.0.0"
@@ -17,6 +12,33 @@
     "@biomejs/biome": "1.9.2",
     "unbuild": "^2.0.0"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/staticWagomU/remark-budoux",
+  "keywords": [
+    "budoux",
+    "remark"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staticWagomU/remark-budoux.git"
+  },
+  "scripts": {
     "build": "unbuild",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts"
 }
