@@ -12,5 +12,9 @@
   "dependencies": {
     "budoux": "^0.6.2",
     "unist-util-visit": "^5.0.0"
-  }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.2",
+    "unbuild": "^2.0.0"
+  },
 }
